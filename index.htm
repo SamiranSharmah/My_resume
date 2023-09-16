@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="./samtime.png">
+    <title>My Resume</title>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <img src="./menu_bar.jpg" id="menuimg">
+        <nav>
+                <li>Home</li>
+                <li>My_intro</li>
+                <li>Services</li>
+                <li>CV</li>
+                <li>Blogs</li>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="maincontent">
+            <div class="devinfo">
+                    <div class="hello">Hi, I am</div>
+                    <div class="name"><h1>Samiran Sharmah</h1></div>
+                    <div class="about">Developer,Mixed media artist,Flute player</div>
+                    <div class="buttons">
+                        <button>Dowonload Resume</button>
+                        <button>Contact me</button>
+                    </div>
+            </div>
+            <div class="devpic"><img src="https://drive.google.com/uc?export=view&id=1jL6mw7THACNvHyx4Xy3hjMxnUfbN6Wmn">
+                <div class="overlay">
+                    <div class="quality">
+                        <h4>Commercial Skills</h4>
+                        <h5>Website Designing</h5>
+                        <h5>Teamwork</h5>
+                        <h5>Email Marketing</h5>
+                        <h5>Decision Making</h5>
+                        <h5>Adaptability</h5>
+                        <h5>Enthusiastic</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<script>
+    const ele=document.getElementById("menuimg");
+    ele.addEventListener("click",myfunction)
+    function myfunction(){
+        document.querySelector(".sidebar img").style.left="11vw";
+        document.querySelector(".sidebar").style.width="12vw";
+        document.querySelector(".overlay").style.left="85%";
+        document.querySelector(".overlay").style.right="85%";
+    }
+</script> 
+</body>
+</html>
